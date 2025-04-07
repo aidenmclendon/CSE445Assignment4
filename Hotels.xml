@@ -27,7 +27,7 @@
     <Name>Marriott</Name>
     <Phone>480-987-6543</Phone>
     <Phone>480-987-0000</Phone>
-    <Address>
+    <Address NearestAirport="Tucson International">
       <Number>33</Number>
       <Street>Central Ave</Street>
       <City>Tucson</City>

@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Hotels 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="Hotels.xsd">
-
-  <Hotel Rating="4.2">
+<?xml version="1.0" encoding="utf-8"?>
+<Hotels>
+  <!-- Example from assignment figure: -->
+  <Hotel ID="H1" Rating="4.2">
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <Address NearestAirport="Sky Habor">
+    <Address NearestAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
@@ -16,114 +14,113 @@
     </Address>
   </Hotel>
 
-  <Hotel Rating="4.5">
+  <Hotel ID="H2" Rating="3.6">
+    <Name>Motel6</Name>
+    <Phone>888-123-4567</Phone>
+    <Address NearestAirport="PHX">
+      <Number>80</Number>
+      <Street>N Rural Rd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85280</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel ID="H3">
     <Name>Hilton</Name>
-    <Phone>602-123-4567</Phone>
-    <Address NearestAirport="Phoenix Sky">
-      <Number>22</Number>
-      <Street>Main St</Street>
+    <Phone>888-111-2222</Phone>
+    <Phone>888-333-4444</Phone>
+    <Address>
+      <Number>1000</Number>
+      <Street>Grand Ave</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85001</Zip>
     </Address>
   </Hotel>
 
-  <Hotel Rating="4.0">
+  <Hotel ID="H4" Rating="4.5">
     <Name>Marriott</Name>
-    <Phone>480-987-6543</Phone>
-    <Phone>480-987-0000</Phone>
-    <Address NearestAirport="Tucson International">
-      <Number>33</Number>
-      <Street>Central Ave</Street>
-      <City>Tucson</City>
+    <Phone>888-555-0101</Phone>
+    <Address>
+      <Number>200</Number>
+      <Street>Broadway Rd</Street>
+      <City>Mesa</City>
       <State>AZ</State>
-      <Zip>85701</Zip>
+      <Zip>85202</Zip>
     </Address>
   </Hotel>
 
-  <Hotel Rating="3.9">
+  <Hotel ID="H5">
     <Name>Hyatt</Name>
-    <Phone>602-222-3333</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>44</Number>
-      <Street>Sunset Blvd</Street>
-      <City>Scottsdale</City>
-      <State>AZ</State>
-      <Zip>85254</Zip>
-    </Address>
-  </Hotel>
-
-  <Hotel Rating="4.0">
-    <Name>Ramada</Name>
-    <Phone>480-444-5555</Phone>
+    <Phone>855-999-9999</Phone>
     <Address>
-      <Number>55</Number>
-      <Street>Broadway</Street>
-      <City>Glendale</City>
-      <State>AZ</State>
-      <Zip>85301</Zip>
-    </Address>
-  </Hotel>
-
-  <Hotel Rating="4.3">
-    <Name>Best Western</Name>
-    <Phone>602-666-7777</Phone>
-    <Phone>602-666-8888</Phone>
-    <Address NearestAirport="Phoenix Sky">
-      <Number>66</Number>
-      <Street>Oak St</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-    </Address>
-  </Hotel>
-
-  <Hotel Rating="3.8">
-    <Name>Comfort Inn</Name>
-    <Phone>480-777-8888</Phone>
-    <Address>
-      <Number>77</Number>
-      <Street>1st Ave</Street>
+      <Number>300</Number>
+      <Street>Central Ave</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85002</Zip>
     </Address>
   </Hotel>
 
-  <Hotel Rating="4.1">
-    <Name>Holiday Inn</Name>
-    <Phone>602-888-9999</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>88</Number>
-      <Street>2nd Ave</Street>
-      <City>Tucson</City>
+  <Hotel ID="H6" Rating="3.9">
+    <Name>HolidayInn</Name>
+    <Phone>877-202-1234</Phone>
+    <Address NearestAirport="PHX">
+      <Number>301</Number>
+      <Street>Central Ave</Street>
+      <City>Phoenix</City>
       <State>AZ</State>
-      <Zip>85702</Zip>
+      <Zip>85002</Zip>
     </Address>
   </Hotel>
 
-  <Hotel Rating="4.7">
+  <Hotel ID="H7">
+    <Name>ComfortInn</Name>
+    <Phone>855-321-7777</Phone>
+    <Phone>855-321-7778</Phone>
+    <Address>
+      <Number>100</Number>
+      <Street>Country Club Dr</Street>
+      <City>Mesa</City>
+      <State>AZ</State>
+      <Zip>85201</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel ID="H8" Rating="4.0">
     <Name>DoubleTree</Name>
-    <Phone>480-999-0000</Phone>
-    <Address>
-      <Number>99</Number>
-      <Street>3rd St</Street>
-      <City>Scottsdale</City>
+    <Phone>888-777-9999</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>777</Number>
+      <Street>Dobson Rd</Street>
+      <City>Mesa</City>
       <State>AZ</State>
-      <Zip>85260</Zip>
+      <Zip>85202</Zip>
     </Address>
   </Hotel>
 
-  <Hotel Rating="3.5">
-    <Name>Red Roof Inn</Name>
-    <Phone>602-111-2222</Phone>
+  <Hotel ID="H9" Rating="4.1">
+    <Name>HamptonInn</Name>
+    <Phone>833-654-3210</Phone>
     <Address>
-      <Number>101</Number>
-      <Street>4th St</Street>
-      <City>Glendale</City>
+      <Number>987</Number>
+      <Street>Mill Ave</Street>
+      <City>Tempe</City>
       <State>AZ</State>
-      <Zip>85302</Zip>
+      <Zip>85287</Zip>
     </Address>
   </Hotel>
 
+  <Hotel ID="H10">
+    <Name>Courtyard</Name>
+    <Phone>833-888-8686</Phone>
+    <Address>
+      <Number>400</Number>
+      <Street>Apache Blvd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
 </Hotels>

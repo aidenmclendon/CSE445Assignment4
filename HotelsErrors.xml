@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Error 1: Root element is Hotel (singular) instead of Hotels (plural) -->
 <Hotel>
-  <Hotel>
+  <Hotel Rating="4.2">
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
@@ -12,8 +13,10 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
-  <Hotel Rating="4.5">
+  <!-- Error 2: Missing Rating attribute (required attribute) -->
+  <Hotel>
     <Name>Hilton</Name>
+    <Phone>602-123-4567</Phone>
     <Address NearestAirport="Phoenix Sky">
       <Number>22</Number>
       <Street>Main St</Street>
@@ -24,16 +27,17 @@
   </Hotel>
   <Hotel Rating="4.0">
     <Name>Marriott</Name>
-    <Phone>480-987-6543</Phone>
-    <Phone>480-987-0000</Phone>
+    <!-- Error 3: Missing Phone element -->
     <Address>
       <Number>33</Number>
       <Street>Central Ave</Street>
       <City>Tucson</City>
       <State>AZ</State>
       <Zip>85701</Zip>
+    <!-- Error 4: Missing closing tag for Address -->
   </Hotel>
   <Hotel Rating="3.9">
+    <!-- Error 5: Two name elements provided for one hotel -->
     <Name>Hyatt</Name>
     <Name>Extra Hyatt</Name>
     <Phone>602-222-3333</Phone>
@@ -54,62 +58,6 @@
       <City>Glendale</City>
       <State>AZ</State>
       <Zip>85301</Zip>
-    </Address>
-  </Hotel>
-  <Hotel Rating="4.3">
-    <Name>Best Western</Name>
-    <Phone>602-666-7777</Phone>
-    <Phone>602-666-8888</Phone>
-    <Address NearestAirport="Phoenix Sky">
-      <Number>66</Number>
-      <Street>Oak St</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-    </Address>
-  </Hotel>
-  <Hotel Rating="3.8">
-    <Name>Comfort Inn</Name>
-    <Phone>480-777-8888</Phone>
-    <Address>
-      <Number>77</Number>
-      <Street>1st Ave</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85002</Zip>
-    </Address>
-  </Hotel>
-  <Hotel Rating="4.1">
-    <Name>Holiday Inn</Name>
-    <Phone>602-888-9999</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>88</Number>
-      <Street>2nd Ave</Street>
-      <City>Tucson</City>
-      <State>AZ</State>
-      <Zip>85702</Zip>
-    </Address>
-  </Hotel>
-  <Hotel Rating="4.7">
-    <Name>DoubleTree</Name>
-    <Phone>480-999-0000</Phone>
-    <Address>
-      <Number>99</Number>
-      <Street>3rd St</Street>
-      <City>Scottsdale</City>
-      <State>AZ</State>
-      <Zip>85260</Zip>
-    </Address>
-  </Hotel>
-  <Hotel Rating="3.5">
-    <Name>Red Roof Inn</Name>
-    <Phone>602-111-2222</Phone>
-    <Address>
-      <Number>101</Number>
-      <Street>4th St</Street>
-      <City>Glendale</City>
-      <State>AZ</State>
-      <Zip>85302</Zip>
     </Address>
   </Hotel>
 </Hotel>

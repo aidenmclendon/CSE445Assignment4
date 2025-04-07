@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Error 1: Root element is Hotel (singular) instead of Hotels (plural) -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 1) Root element is wrong: "Hotel" instead of "Hotels" -->
 <Hotel>
-  <Hotel Rating="4.2">
+  <!-- Valid Hotel, so the root name is the cause of error #1 -->
+  <Hotel ID="H1" Rating="4.2">
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <Address NearestAirport="Sky Habor">
+    <Address NearestAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
@@ -14,54 +15,56 @@
     </Address>
   </Hotel>
 
-  <!-- Error 2: Missing required Rating attribute -->
-  <Hotel>
+  <!-- 2) Missing a required attribute 'ID' -->
+  <Hotel Rating="3.6">
+    <Name>Motel6</Name>
+    <Phone>888-123-4567</Phone>
+    <Address NearestAirport="PHX">
+      <Number>80</Number>
+      <Street>N Rural Rd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85280</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- 3) A Phone element is missing entirely -->
+  <Hotel ID="H3">
     <Name>Hilton</Name>
-    <Phone>602-123-4567</Phone>
-    <Address NearestAirport="Phoenix Sky">
-      <Number>22</Number>
-      <Street>Main St</Street>
+    <!-- minOccurs=1, but we have 0 Phone elements --> 
+    <Address>
+      <Number>1000</Number>
+      <Street>Grand Ave</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85001</Zip>
     </Address>
   </Hotel>
 
-  <Hotel Rating="4.0">
+  <!-- 4) Address element is never closed -->
+  <Hotel ID="H4" Rating="4.5">
     <Name>Marriott</Name>
-    <!-- Error 3: Missing Phone element -->
+    <Phone>888-555-0101</Phone>
     <Address>
-      <Number>33</Number>
-      <Street>Central Ave</Street>
-      <City>Tucson</City>
+      <Number>200</Number>
+      <Street>Broadway Rd</Street>
+      <City>Mesa</City>
       <State>AZ</State>
-      <Zip>85701</Zip>
-    <!-- Error 4: Missing closing tag for <Address> -->
+      <Zip>85202</Zip>
+    <!-- MISSING </Address> TAG -->
   </Hotel>
 
-  <Hotel Rating="3.9">
-    <!-- Error 5: Two Name elements -->
+  <!-- 5) Two Name elements cause an error -->
+  <Hotel ID="H5">
     <Name>Hyatt</Name>
-    <Name>Extra Hyatt</Name>
-    <Phone>602-222-3333</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>44</Number>
-      <Street>Sunset Blvd</Street>
-      <City>Scottsdale</City>
-      <State>AZ</State>
-      <Zip>85254</Zip>
-    </Address>
-  </Hotel>
-
-  <Hotel Rating="4.0">
-    <Name>Ramada</Name>
-    <Phone>480-444-5555</Phone>
+    <Name>DuplicateName</Name>
+    <Phone>855-999-9999</Phone>
     <Address>
-      <Number>55</Number>
-      <Street>Broadway</Street>
-      <City>Glendale</City>
+      <Number>300</Number>
+      <Street>Central Ave</Street>
+      <City>Phoenix</City>
       <State>AZ</State>
-      <Zip>85301</Zip>
+      <Zip>85002</Zip>
     </Address>
   </Hotel>
 </Hotel>

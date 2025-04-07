@@ -2,7 +2,7 @@
 <!-- Error 1: Root element is Hotel (singular) instead of Hotels (plural) -->
 <Hotel>
   <Hotel Rating="4.2">
-    <Name>Westin</Name>
+    <n>Westin</n>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
     <Address NearestAirport="Sky Harbor">
@@ -15,8 +15,8 @@
   </Hotel>
   <!-- Error 2: Missing Rating attribute (required attribute) -->
   <Hotel>
-    <Name>Hilton</Name>
-    <Phone>602-123-4567</Phone>
+    <n>Hilton</n>
+    <!-- Error 3: Missing Phone element -->
     <Address NearestAirport="Phoenix Sky">
       <Number>22</Number>
       <Street>Main St</Street>
@@ -26,8 +26,9 @@
     </Address>
   </Hotel>
   <Hotel Rating="4.0">
-    <Name>Marriott</Name>
-    <!-- Error 3: Missing Phone element -->
+    <n>Marriott</n>
+    <Phone>480-987-6543</Phone>
+    <Phone>480-987-0000</Phone>
     <Address>
       <Number>33</Number>
       <Street>Central Ave</Street>
@@ -38,8 +39,8 @@
   </Hotel>
   <Hotel Rating="3.9">
     <!-- Error 5: Two name elements provided for one hotel -->
-    <Name>Hyatt</Name>
-    <Name>Extra Hyatt</Name>
+    <n>Hyatt</n>
+    <n>Extra Hyatt</n>
     <Phone>602-222-3333</Phone>
     <Address NearestAirport="Sky Harbor">
       <Number>44</Number>
@@ -47,17 +48,6 @@
       <City>Scottsdale</City>
       <State>AZ</State>
       <Zip>85254</Zip>
-    </Address>
-  </Hotel>
-  <Hotel Rating="4.0">
-    <Name>Ramada</Name>
-    <Phone>480-444-5555</Phone>
-    <Address>
-      <Number>55</Number>
-      <Street>Broadway</Street>
-      <City>Glendale</City>
-      <State>AZ</State>
-      <Zip>85301</Zip>
     </Address>
   </Hotel>
 </Hotel>
